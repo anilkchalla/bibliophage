@@ -145,7 +145,22 @@
   .hero-meta     { animation: fadeUp 0.7s 0.3s ease both; }
   .hero-logo-col { animation: fadeUp 0.9s 0.2s ease both; }
 
-
+/* WHY THIS MATTERS */
+  .why-section { background: var(--cream); border-top: 1px solid var(--border); }
+  .why-intro { font-size: 1.05rem; color: var(--ink-soft); line-height: 1.75; max-width: 680px; margin-bottom: 3rem; }
+  .why-intro strong { color: var(--ink); font-weight: 500; }
+  .why-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .why-card { background: var(--cream-dark); border: 1px solid var(--border); border-radius: 2px; padding: 2rem; position: relative; overflow: hidden; }
+  .why-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); }
+  .why-card-icon { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; font-weight: 500; }
+  .why-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 0.75rem; line-height: 1.3; }
+  .why-card p { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 0; }
+  .why-card ul { list-style: none; margin: 0.75rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .why-card ul li { font-size: 13px; color: var(--ink-soft); padding: 5px 10px; background: var(--cream); border-left: 2px solid var(--accent); line-height: 1.4; }
+  .why-close { font-size: 1rem; color: var(--ink-soft); line-height: 1.75; max-width: 680px; margin-top: 2.5rem; font-style: italic; }
+  .why-close strong { color: var(--ink); font-style: normal; font-weight: 500; }
+  @media (max-width: 720px) { .why-cards { grid-template-columns: 1fr; } }
+ 
   /* ORGANIZER */
   .organizer-section { background: var(--cream-dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 4rem 3rem; }
   .organizer-card { display: flex; align-items: center; gap: 2rem; background: var(--cream); border: 1px solid var(--border); border-radius: 2px; padding: 2rem 2.5rem; max-width: 680px; position: relative; overflow: hidden; }
@@ -301,6 +316,58 @@
 </section>
 
 <!-- ORGANIZER -->
+
+ <!-- WHY THIS MATTERS -->
+<section class="why-section">
+  <div class="section-inner">
+    <div class="section-label">Why this program. Why now.</div>
+    <h2>What this <em>prepares you for</em></h2>
+    <p class="why-intro">The students who stand out in competitive programmes and interviews are rarely those who simply knew more. They are the ones who could <strong>think</strong> with what they knew &mdash; read a difficult text, follow its argument, and connect ideas across disciplines. These capacities are not developed by covering more syllabus. They are developed by sustained, guided engagement with ideas that genuinely challenge you.</p>
+
+    <div class="why-cards">
+
+      <div class="why-card">
+        <div class="why-card-icon">Entrance &amp; Interviews</div>
+        <h3>IISER, IISc, TIFR &amp; beyond</h3>
+        <p>Entrance interviews for these programmes routinely ask students to speak about something they have explored beyond the standard syllabus. A student who has spent ten weeks reading and debating a rigorous scientific text walks into that room with a genuine story to tell &mdash; not a rehearsed answer.</p>
+        <ul>
+          <li>IISER Aptitude Test interviews</li>
+          <li>IISc BS programme selection</li>
+          <li>TIFR &amp; NCBS entrance interviews</li>
+          <li>Science Olympiad preparation</li>
+        </ul>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-icon">Applications &amp; Essays</div>
+        <h3>Statements of purpose &amp; research interest</h3>
+        <p>BS-MS applications, summer research programmes, and eventually graduate school all demand evidence that you have engaged seriously with science on your own terms, outside a classroom. Bibliophage gives you that experience &mdash; and the language to describe it compellingly.</p>
+        <ul>
+          <li>VSRP, NIUS, SRFP applications</li>
+          <li>BS-MS statements of purpose</li>
+          <li>International undergraduate applications</li>
+          <li>Graduate school research statements</li>
+        </ul>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-icon">Research &amp; Internships</div>
+        <h3>Lab internships &amp; research readiness</h3>
+        <p>Internship applications and research lab interviews reward students who can demonstrate intellectual initiative. Having read primary scientific literature in a structured, discussion-based setting signals maturity and readiness in a way that exam scores alone cannot.</p>
+        <ul>
+          <li>Research lab interview preparation</li>
+          <li>Summer internship applications</li>
+          <li>Journal club readiness</li>
+          <li>Undergraduate research programmes</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="why-close">For students considering research as a path &mdash; and for parents investing in that possibility &mdash; this is <strong>preparation that compounds</strong>. The skills built here do not expire after an exam. They show up every time you walk into a room where science is being taken seriously.</p>
+  </div>
+</section>
+ 
 <section class="organizer-section">
   <div class="section-inner">
     <div class="section-label">Organizer</div>
